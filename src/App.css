@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+@keyframes one {
+  from {background-color: blue;}
+  to {background-color: gold;}
+  
+}
+
+@keyframes one--text {
+  from {color: white;}
+  to {color: black;}
+}
+
+@keyframes two--text {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes three--text {
+  from {transform: translate(0%, -250px); color: white;}
+
+  25% {transform: translate(0%, 0px); color: black;}
+
+  50% {transform: translate(0%, 250px); color: white;}
+
+  to {transform: translate(0%, -250px); color: black;}
+}
+p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+  margin-left: 15em;
+  margin-right: 15em;
+  justify-content: center;
+  height: 650px;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+}
+
+.one {
+  animation-name: one;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.one--text {
+  animation-name: one--text;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.two--text {
+  animation-name: two--text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.three {
+  background-color: blue;
+}
+
+.three--text {
+  animation-name: three--text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+
